@@ -1,0 +1,39 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h1>List of Cars</h1>
+	
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Brand</th>
+					<th>Model</th>
+					<th>Color</th>
+					<th>Plate Number</th>
+					<th>Owner</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="car : ${cars}">
+					<td th:text="${car.id}"></td>
+					<td th:text="${car.brand}"></td>
+					<td th:text="${car.model}"></td>
+					<td th:text="${car.color}"></td>
+					<td th:text="${car.plateNumber}"></td>
+					<td th:text="${car.customer}"></td>
+				</tr>
+			</tbody>
+		</table>
+		<a href="newcar">Add a Car!</a>
+</body>
+</html>
