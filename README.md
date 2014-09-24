@@ -1,16 +1,20 @@
 spring_sample
 =============
 
-<ul>Spring example project using:
+This is a Spring example project using:
+
+<ul>
 <li>Spring Boot</li>
 <li>Spring Data (ORM against MySQL)</li>
-<liSpring MVC</li>
+<li>Spring MVC (Model View Controller Service Repository stack)</li>
 <li>Thymeleaf Template Engine</li>
 <li>BootStrap</li>
 </ul>
+
 NO XMLs, <b>full annotation-driven.</b>
 
-<h2>Runit</h2>
+Runit
+=====
 
 This project was made with the purpose to be ran just out of the box. This feature requires a little bit of software
 
@@ -27,7 +31,9 @@ If everything went fine, the server trace has to show no errors and the finishin
 
 ```Started Application in xx.xxx seconds (JVM running for zz.zzz)```
 
-<h2>Useit</h2>
+Use it
+======
+
 Take a look to the classes available at com.sukaro.example.web package to have an idea of the URL mappings of this application.
 
 Resuming:
